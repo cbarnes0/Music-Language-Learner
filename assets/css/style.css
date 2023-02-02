@@ -1,0 +1,28 @@
+body {
+    width: 100px;
+    height: 100px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar h2 {
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.top-bar img {
+    height: 30px;
+    margin-top: 20px;
+    
+}
+
