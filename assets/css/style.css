@@ -6,23 +6,25 @@ body {
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
 }
 
-.top-bar {
+/* Music Player */
+/* I want to set up music player first then it will be top and bottom designing later since we will work on the project 02/02/2023*/
+
+#music-player {
+    width: 400px;
+    height: 200px;
+    background-color: lightgray;
+  }
+  
+  #controls {
     display: flex;
-    align-items: center;
-}
-
-.top-bar h2 {
-    margin-right: 15px;
-    margin-top: 20px;
-    margin-left: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.top-bar img {
-    height: 30px;
-    margin-top: 20px;
-    
-}
-
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
