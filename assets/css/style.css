@@ -9,22 +9,45 @@ body {
 /* Music Player */
 /* I want to set up music player first then it will be top and bottom designing later since we will work on the project 02/02/2023*/
 
-#music-player {
-    width: 400px;
-    height: 200px;
-    background-color: lightgray;
-  }
-  
-  #controls {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  button {
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
+#player {
+  width: 400px;
+  height: 200px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+}
+
+#play, #pause {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+#progress {
+  height: 10px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #333;
+}
+
+#volume {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#volume-control {
+  width: 200px;
+}
