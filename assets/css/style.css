@@ -1,14 +1,11 @@
-body {
-    width: 100px;
-    height: 100px;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-}
 
 /* Music Player */
 /* I want to set up music player first then it will be top and bottom designing later since we will work on the project 02/02/2023*/
 
+/* First Attempt */
+
+
+/*
 #player {
   width: 400px;
   height: 200px;
@@ -50,4 +47,77 @@ body {
 
 #volume-control {
   width: 200px;
+}
+*/
+
+/* Second Attempt */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  width: 100%;
+  height: 100%;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 6; 
+    background: red;
+  }
+  .div2 { 
+    grid-area: 2 / 1 / 5 / 3; 
+    background: blue;
+  }
+  .div3 { 
+    grid-area: 2 / 3 / 5 / 6;
+    background: green; 
+  }
+  .div4 { 
+    grid-area: 5 / 1 / 6 / 3;
+    background: aqua; 
+  }
+  .div5 { 
+    grid-area: 5 / 3 / 6 / 6; 
+    background: yellow;
+  }
+  .div6 { 
+    grid-area: 6 / 1 / 7 / 6; 
+    background: brown;
+  }
+
+  .overlay-play-button {
+    /* Used to position the overlay */
+    position: relative;
+}
+
+.overlay-play-button__overlay {
+    /* Position */
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Add a dark background */
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.overlay-play-button__play {
+    border: 0.25rem solid #fff;
+    border-radius: 9999px;
+    height: 3rem;
+    width: 3rem;
+
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
