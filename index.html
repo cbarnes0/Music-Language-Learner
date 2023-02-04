@@ -1,62 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rebooters Spotify</title>
     <!-- Adding Spotify Icon -->
+    <!-- 
     <link rel="icon" href="./assets/imgs/spotify.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Adding TailWind CSS-->
     <!-- Apparently to add tailwind to css, we have to add script before <head> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
-  <!-- First Attempt
-  <nav><h1>Music Language Learner</h1></nav>
-  <div id="player">
-    <audio id="music">
-      <source src="your_music_file.mp3" type="audio/mpeg">
-    </audio>
-    <div id="controls">
-      <button id="play">Play</button>
-      <button id="pause">Pause</button>
+  </head>
+  <body>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search">
+      <button id="search-button">Go</button>
     </div>
-    <div id="progress">
-      <div id="progress-bar"></div>
+    
+    <div id="results-container">
+      <!-- Results will be inserted here -->
     </div>
-    <div id="volume">
-      <input type="range" id="volume-control">
-    </div>
-  </div>
--->
-<div class="parent">
-  <div class="div1">Header</div>
-
-  <div class="div2">
-    <div class="overlay-play-button">
-      <!-- The video element -->
-      <video src="..." />
-  
-      <!-- The overlay area -->
-      <div class="overlay-play-button__overlay">
-          <!-- The player button -->
-          <div class="overlay-play-button__play">...</div>
-      </div>
-  </div>
     
-  </div>
-  
-  <div class="div3">Lyrics</div>
-  <div class="div4">Music-Finder-Bar</div>
-  <div class="div5">Language Changing</div>
-  <div class="div6">Footer</div>
-  </div>      
-    
-
-    
-
-    </body>
+  </body>
 </html>
